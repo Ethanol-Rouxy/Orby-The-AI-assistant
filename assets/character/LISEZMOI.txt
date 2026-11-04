@@ -1,0 +1,24 @@
+Dépose ici tes spritesheets d'Orby (PNG, fond transparent), avec ces noms :
+
+  idle.png      OBLIGATOIRE  animation de repos (boucle)
+  start.png     jouée une fois au démarrage (et à chaque réaffichage)
+  stop.png      jouée une fois à l'arrêt (et au masquage)
+
+Optionnels :
+  pet.png       quand on le caresse avec la souris (boucle)
+  drag.png      quand on le déplace (boucle)
+  thinking.png  pendant que l'IA réfléchit
+  working.png   pendant qu'elle utilise un outil (ouvrir un fichier...)
+  error.png     en cas d'erreur
+
+Sans pet.png : des petits coeurs montent et Orby fait un léger "squish".
+Sans drag.png : Orby se penche selon la vitesse du déplacement, comme suspendu.
+(Ces deux effets de secours se coupent dans config.py : PET_HEARTS / DRAG_TILT.)
+Sans thinking/working/error : idle reste affichée + un petit point de couleur.
+
+Format : chaque image fait 100x100 px, rangées de gauche à droite puis de haut en bas
+(une bande horizontale OU une grille, les deux marchent).
+Les cases vides à la fin de la feuille sont ignorées automatiquement.
+
+La vitesse (fps), la taille et le nombre d'images se règlent dans config.py
+(section SPRITE_...).

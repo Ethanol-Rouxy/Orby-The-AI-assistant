@@ -1,0 +1,7 @@
+PySide6
+openai
+python-dotenv
+pypdf
+python-docx
+pynput
+psutil
